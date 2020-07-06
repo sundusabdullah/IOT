@@ -4,6 +4,7 @@ $connection = [
     'host'=> 'localhost',
     'user' => 'root',
     'database' => 'roport'
+
 ];
 
 $mysqli = mysqli_connect($connection['host'],

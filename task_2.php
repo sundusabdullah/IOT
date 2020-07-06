@@ -49,14 +49,11 @@
     </body>
 </html>
 
-
 <?php 
 
 $result = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-
     if (isset($_POST["R"])){
         $result = 'R';
         $sql =  "INSERT INTO `controller` (`Right`, `Left`, `Forward`, `Backward`, `Stop`) VALUES ('$result', '', '', '', '')";
@@ -67,7 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         mysqli_close($mysqli);
         header('location: result.php');
-
     } 
 
     else if (isset($_POST["L"])){
@@ -117,7 +113,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         mysqli_close($mysqli);
         header('location: result.php');
     }
-
 }
 
 ?>

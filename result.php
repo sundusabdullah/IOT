@@ -2,23 +2,6 @@
     require_once 'config/database.php';
 ?>
 
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <style>
-        body{
-            background-color: #BFBFBF;
-        }
-    </style>
-    </head>
-    <body>
-
-    </body>
-
-</html>
-
 <?php
 
 $result = "SELECT `Right`, `Left`, `Forward`, `Backward`, `Stop` FROM `controller`
